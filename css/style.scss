@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.bg-image {
+  background-image: url(../images/nybg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .heading {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+      padding: 1rem 1.5rem;
+      background-color: white;
+      color: black;
+    }
+    .timer-flex {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      h1 {
+        font-size: 11rem;
+        letter-spacing: 0.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 0.25rem;
+      }
+      .days {
+        width: 420px;
+      }
+      .hours,
+      .minutes,
+      .seconds {
+        width: 360px;
+      }
+    }
+    .footer {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 20px black;
+      padding: 1rem 1.5rem;
+      .year {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .bg-image {
+    height: auto;
+    .timer-flex {
+      margin: 5rem auto;
+    }
+    .footer {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .bg-image {
+    .container {
+      .heading,
+      .footer {
+        font-size: 150%;
+      }
+      .timer-flex {
+        h1 {
+          font-size: 8rem;
+          letter-spacing: 0.5rem;
+        }
+        h2 {
+          font-size: 1rem;
+          letter-spacing: 0.25rem;
+        }
+        .hours,
+        .minutes,
+        .seconds {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
